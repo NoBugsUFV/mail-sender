@@ -1,12 +1,20 @@
-<?php
-    $url = (isset($_GET['url'])) ? $_GET['url'] : 'home';
-    $url = array_filter(explode('/', $url));
-    $file = $url[0] . '.php';
-    if(is_file($file)){
-        include 'pages/' . $file;
-    }else{
-        include "pages/404.php";
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página</title>
+</head>
+<body>
+
+    <h1>Enviar NL</h1>
+    <button id="btn">Enviar</button>
+</body>
+<script>
+    let btnEnviar  = document.getElementById("btn").addEventListener("click", send);
+    
+    function send(){
+        window.location.href = 'mailer.php';
     }
 
-    //Começando url amigável
-?>
+</script>
+</html>

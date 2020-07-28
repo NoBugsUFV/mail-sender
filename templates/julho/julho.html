@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página</title>
+    <link rel="stylesheet" href="./styles/julho.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+    <style>
+        @font-face{
+            font-family: "Gotham";
+            src: url('https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css');
+                
+        }
+
+        body{
+            flex: 1;
+            margin: auto;
+        }
+        body .container{
+            padding-left: 25%;
+            padding-right: 25%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+        }
+        body .container .header{
+            height: 200px;
+            background-color: #0075c9;
+            display: flex;
+        }
+        body .container .header #logo{
+            width: 400px;
+            height: 69.12px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            align-self: center;
+        }
+        /* body .container .outset img{
+
+        } */
+        body .container .outset .nlTitle{
+            font-family: Gotham Black;
+            text-align: center;
+        }
+        body .container .outset .outsetText{
+            font-family: Gotham Medium;
+            text-align: justify;
+            opacity: 70%;
+        }
+        body .container .department .deptName{
+            color: #0075c9;
+            font-family: Gotham Black;
+            font-size: 24px;
+        }
+        body .container .department .deptTopic{
+            font-family: Gotham Black;
+            margin-left: 5%;
+        }
+        body .container .department .topicList{
+            margin-left: 7%;
+        }
+        body .container .department .topicList .topic{
+            font-family: Gotham;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+    <div class="container" style=" 
+        padding-top: 2%;
+        padding-bottom: 2%;
+        ">
+        <div class="header" style="
+            height: 200px;
+            background-color: #0075c9;
+            display: flex;
+        ">
+            <img 
+            src="https://nobugs.com.br/wp-content/uploads/2020/04/cropped-Logo_Master_Branco_Transparente.png" 
+            alt="LOGO" id="logo" style="
+                width: 300px;
+                height: 51.84px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: auto;
+                margin-bottom: auto;
+            "> <!-- Logo No Bugs -->
+        </div>
+        <div class="outset">
+            <img src="https://media.giphy.com/media/m9Y9rfnVx4ktGNISZ3/giphy.gif" alt="gif" style="
+                margin-top: 2%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            "> <!-- GIF de introdução -->
+            <h2 class="nlTitle" style="
+                font-family: Gotham Black;
+                text-align: center;
+                font-size: 24px;
+            ">Esse é o título da Newsletter de Julho!</h2>
+            <p class="outsetText" style="
+                font-family: Gotham Medium;
+                font-size: 18px;
+                text-align: justify;
+                opacity: 70%;
+            ">
+                O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. 
+                O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias 
+                desde o ano de 1500, quando uma misturou os caracteres de um texto para
+                criar um espécime de livro. Este texto não só sobreviveu 5 séculos, mas
+                também o salto para a tipografia electrónica, mantendo-se essencialmente
+                inalterada. Foi popularizada nos anos 60 com a disponibilização das folhas
+                de Letraset, que continham passagens com Lorem Ipsum, e mais recentemente
+                com os programas de publicação como o Aldus PageMaker que incluem versões
+                do Lorem Ipsum.
+            </p>
+        </div>
+        <div class="department">
+            <h3 class="deptName" style="
+                color: #0075c9;
+                font-family: Gotham Black;
+                font-size: 24px;
+            ">Presidência</h3>
+            <h4 class="deptTopic" style="
+                font-family: Gotham Black;
+                margin-left: 5%;
+                font-size: 20px;
+            ">Prefeitura</h4>
+            <ul class="topicList" style="
+                margin-left: 7%;
+            ">
+                <li class="topic" style="font-family: Gotham; font-size: 18px;"> <strong>Salários pagos para todos:</strong> 
+                    <p class="topicText">
+                        Na data de hoje, o prefeito resolveu pagar o salário de geral dando 
+                        a todos o dobro do valor que recebem normalmente. Fé que no próximo mês
+                        será o triplo!
+                    </p>
+                </li>
+
+                <li class="topic" style="font-family: Gotham; font-size: 18px;"> <strong>O prefeito tá maluco:</strong> 
+                    <p class="topicText">
+                        Ontem o prefeito foi flagrado correndo pelado pelas dependências do LBI cantando o hino nacional.
+                        A situação foi contida quando acorrentaram o mesmo ao poste da entrada do prédio. 
+                    </p>
+                </li>
+
+                <li class="topic" style="font-family: Gotham; font-size: 18px;"> <strong>Levi resolveu pintar o cabelo</strong> 
+                    <p class="topicText">
+                       Em um surto psicótico, Ivo resolveu mudar o visual de suas madeixas, pintando-as de azul marinho.
+                       A justificativa para tal fato foi que ele queria fazer cosplay de sereia.
+                    </p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
