@@ -25,7 +25,7 @@
     $mail->addAddress($email, $nome);
     $mail->Subject = 'NL de Julho, meu bom! Toda nova!';
     $mail->isHTML(true);
-    $mail->msgHTML(file_get_contents('./templates/julho/julho.html'), __DIR__);
+    $mail->msgHTML(file_get_contents('./assets/templates/julho/julho.html'), __DIR__);
     $mail->AltBody = 'Mensagem alternativa';
 
     //$mail->addAttachment('assets/arq.pdf');
