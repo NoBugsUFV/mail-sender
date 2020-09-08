@@ -23,9 +23,9 @@
     $mail->setFrom($email_remetente,$nome_remetente);
     $mail->addReplyTo($email_reply);
     $mail->addAddress($email, $nome);
-    $mail->Subject = 'NL de Julho, meu bom! Toda nova!';
+    $mail->Subject = 'Demorei mas cheguei rápido!';
     $mail->isHTML(true);
-    $mail->msgHTML(file_get_contents('./assets/templates/julho/julho.html'), __DIR__);
+    $mail->msgHTML(file_get_contents('./assets/templates/agosto/agosto.html'), __DIR__);
     $mail->AltBody = 'Mensagem alternativa';
 
     //$mail->addAttachment('assets/arq.pdf');
