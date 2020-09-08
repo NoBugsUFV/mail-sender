@@ -1,0 +1,1 @@
+##Esse é o readme do enviador de newsletter!
