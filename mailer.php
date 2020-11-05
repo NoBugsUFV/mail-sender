@@ -1,12 +1,13 @@
 <?php
     require_once ('env.php');
-    
+
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
 
     require './PHPMailer/Exception.php';
     require './PHPMailer/PHPMailer.php';
     require './PHPMailer/SMTP.php';
+
 
     $mail = new PHPMailer;
     $mail->isSMTP();
@@ -22,10 +23,15 @@
 
     $mail->setFrom($email_remetente,$nome_remetente);
     $mail->addReplyTo($email_reply);
-    $mail->addAddress($email, $nome);
-    $mail->Subject = 'Demorei mas cheguei rápido!';
+
+    foreach ($emails as $email) {
+        $mail->addAddress($email, $nome);
+    }
+
+    $mail->Subject = $subject;
+
     $mail->isHTML(true);
-    $mail->msgHTML(file_get_contents('./assets/templates/agosto/agosto.html'), __DIR__);
+    $mail->msgHTML(file_get_contents('./assets/templates/abertura.html'), __DIR__);
     $mail->AltBody = 'Mensagem alternativa';
 
     //$mail->addAttachment('assets/arq.pdf');
