@@ -10,6 +10,7 @@
 
 
     $mail = new PHPMailer;
+    $mail->CharSet = 'UTF-8';
     $mail->isSMTP();
     $mail->SMTPDebug = 0;
     $mail->Host = 'smtp.gmail.com';
@@ -25,14 +26,15 @@
     $mail->addReplyTo($email_reply);
 
     foreach ($emails as $email) {
-        $mail->addAddress($email, $nome);
+        $mail->addBCC($email, $nome);
+        //$mail->addAddress($email, $nome);
     }
 
     $mail->Subject = $subject;
 
     $mail->isHTML(true);
-    $mail->msgHTML(file_get_contents('./assets/templates/abertura.html'), __DIR__);
-    $mail->AltBody = 'Mensagem alternativa';
+    $mail->msgHTML(file_get_contents($template_path), __DIR__);
+    $mail->AltBody = 'Mensagem Semana de Informática';
 
     //$mail->addAttachment('assets/arq.pdf');
 
