@@ -6,7 +6,7 @@
 </head>
 <body>
 
-    <h1>Enviar NL</h1>
+    <h1>Enviar Email</h1>
     <button id="btn">Enviar</button>
 </body>
 <script>
